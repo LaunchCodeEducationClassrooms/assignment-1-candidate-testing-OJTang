@@ -41,11 +41,14 @@ for (j = 0; j < correctAnswers.length; j++) {
 }
   let grade = total / questions.length *100;
   
+  return grade;
+  
   console.log(`*** Overall grade: ${grade}% \(${total} out of ${questions.length} correct\) ***`);
   if (grade >= 80) {
     console.log(`*** Status: PASSED  ***`);
   } else {
     console.log(`*** Status: FAILED  ***`);
+  
   }
 }
 
